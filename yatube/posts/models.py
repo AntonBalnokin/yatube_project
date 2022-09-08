@@ -14,7 +14,7 @@ class Post(models.Model):
     )
 class Group(models.Model):
     title = models.TextField()
-    slug = models.
+#    slug = models.
    # def __str__(self):
       #  return self.title
 

@@ -10,20 +10,18 @@ def index(request):
     context = {
         'posts': posts,
     }
-    return render(request, 'templates/posts/index.html', context)
-
-
+    return render(request, 'posts/index.html', context)
 
 
 def group_list(request):
-    template = 'templates/posts/group_list.html'
+    template = 'posts/group_list.html'
     return render(request, template)
 
 
 # Страница с информацией об одном сорте мороженого;
 # view-функция принимает параметр pk из path()
 def group_posts(request, slug):
-    template = 'templates/posts/group_posts.html'
+    template = 'posts/group_posts.html'
     title = "Здесь будет информация о группах проекта Yatube"
     text = 'Последние обновления на сайте'
     context = {
